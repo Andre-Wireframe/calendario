@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <title>Calendario Socioemocional</title>
+</head>
+<body>
+
+    <header>
+        <div id="hero">
+            <div>
+                <h1>Calendario Socioemocional</h1>
+                <h2>El calendario de las emociones</h2>
+            </div>
+        </div>
+        <video class="back" src="css/img/fondo1.mp4" muted autoplay loop></video>
+    </header>
+
+    <div class="medium">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Entra al calendario aqui:</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3 mt-3">
+                    <button class="button-generic"><a href="calendario.html">Entrar al sitio</a></button>
+                </div>
+                <div class="col-12 col-md-6 mb-3 mt-3">
+                    <button onclick="mostrarLogin()" class="button-generic">Iniciar sesion (opcional)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="form" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <label for="name">Nombre de usuario</label><br>
+                        <input placeholder="No se recomienda usar el nombre completo" id="username" type="text" name="name" class="form-control"><br>
+
+                        <label for="grupo">Grupo del estudiante</label><br>
+                        <input id="mygrupo" type="number" name="grupo" class="form-control"><br>
+
+                        <label for="chck"><small>Aceptas el uso de tu nombre y grupo?</small></label>
+                        <input id="chck" type="checkbox" name="check"><br><br>
+
+                        <button onclick="login()" type="button" class="button-generic">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Trabajo del grupo 301</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p>
+                        Sitio web:
+                        <ul>
+                            <li>Andre Lizarraga: Developer</li>
+                        </ul>
+                        Meses:
+                        <ul>
+                            <li class="footerlist">Enero: Equipo 1</li>
+                            <li class="footerlist">Febrero: Equipo 2</li>
+                            <li class="footerlist">Marzo: Equipo 3</li>
+                            <li class="footerlist">Abril: Equipo 4</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                <p>
+                    <ul>
+                        <li class="footerlist">Mayo: Equipo 5</li>
+                        <li class="footerlist">Junio: Equipo 6</li>
+                        <li class="footerlist">Julio: Equipo 7</li>
+                        <li class="footerlist">Agosto: Equipo 8</li>
+                        <li class="footerlist">Septiembre: Equipo 9</li>
+                        <li class="footerlist">Octubre: Equipo 10</li>
+                        <li class="footerlist">Noviembre: Equipo 11</li>
+                        <li class="footerlist">Diciembre: Equipo 12</li>
+                    </ul>
+                </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="boostrap/js/bootstrap.min.js"></script>
+    <script src="js/in.js"></script>
+    
+</body>
+</html>
